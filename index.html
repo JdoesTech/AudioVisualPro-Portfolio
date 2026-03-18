@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Audio & Video Editor Portfolio</title>
+  <title>JdoesTech: Audio & Video Editor Portfolio</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
 <header>
-  <h1>Audio & Video Editor</h1>
+  <h1>JdoesTech</h1>
+  <h2>Audio & Video Editor</h2>
   <p>Clean Audio • Engaging Video • Fast Turnaround</p>
 </header>
 
@@ -17,7 +18,21 @@
   <h2>About</h2>
   <p>
     I specialize in audio cleanup and video editing using Audacity, Adobe Premiere Pro, and CapCut.
-    Additionally, I have experience with Shotcut and OpenShot, and Ardour, LMMS for music production.
+  </p>
+  <p>  
+    Additionally, I have experience with 
+    <div class="list_grid">
+      <ul>
+        <li>Shotcut</li>
+        <li>OpenShot</li>
+      </ul> for video editing
+      <ul>
+        <li>Ardour</li>
+        <li>LMMS</li> 
+      </ul> for music production.
+    </div>
+  </p>
+  <p>
     I apply transferable workflows across platforms, allowing me to adapt to different editing tools efficiently.
   </p>
 </section>
@@ -35,71 +50,85 @@
 <section id="projects">
   <h2>Projects</h2>
 
-  <div class="project">
-    <h3>Raw Audio Sample</h3>
-    <p>Noise reduction, EQ, compression, and normalization.</p>
-    <audio controls src="assets/audio/Audio_enhancing/raw_audio_file.wav"></audio>
-  </div>
+  <section id="Audio">
+    <h3>Audio Enhancing</h3>
+    <div class="cleanAudio">
+      <div class="project">
+        <h4>Raw Audio Sample</h4>
+        <p>Noise reduction, EQ, compression, and normalization.</p>
+        <audio controls src="assets/audio/Audio_enhancing/raw_audio_file.wav"></audio>
+      </div>
 
-  <div class="project">
-    <h3>Cleaned Audio Sample</h3>
-    <p>Noise reduction, EQ, compression, and normalization.</p>
-    <audio controls src="assets/audio/Audio_enhancing/edited_audio.wav"></audio>
-  </div>
+      <div class="project">
+        <h4>Cleaned Audio Sample</h4>
+        <p>Noise reduction, EQ, compression, and normalization.</p>
+        <audio controls src="assets/audio/Audio_enhancing/edited_audio.wav"></audio>
+      </div>
+    </div>
+  </section>
 
-  <div class="project">
-  <h3>Podcast Audio Cleanup</h3>
-    <p>Noise reduction, EQ, compression, and normalization.</p>
-    <audio controls src="assets/audio/Audio_enhancing/Monstrosity Unveiled_The Nexus of Wars, Colonialism and Human Nature on Africa.mp3"></audio>
-  </div>
+  <section id="Audio_cleanup">
+    <h3>Podcast Audio Cleanup</h3>
+    <div class="project">
+      <h4>Podcast Audio Cleanup</h4>
+      <p>Noise reduction, EQ, compression, and normalization.</p>
+      <audio controls src="assets/audio/Audio_enhancing/Monstrosity Unveiled_The Nexus of Wars, Colonialism and Human Nature on Africa.mp3"></audio>
+    </div>
+  </section>
 
-  <div class="project">
-  <h3>Guitar synth sample</h3>
-    <p>Noise reduction, EQ, compression, and normalization.</p>
-    <audio controls src="assets/audio/DAW/guitar_guitar.wav"></audio>
-  </div>
+  <section id="DAW">
+    <h3>DAW Beats</h3>
+    <div class="beats">
+      <div class="project">
+        <h4>Guitar Synth Sample</h4>
+        <p>Noise reduction, EQ, compression, and normalization.</p>
+        <audio controls src="assets/audio/DAW/guitar_guitar.wav"></audio>
+      </div>
 
-  <div class="project">
-  <h3>Trap synth sample</h3>
-    <p>Noise reduction, EQ, compression, and normalization.</p>
-    <audio controls src="assets/audio/DAW/trap_funk_synths.wav"></audio>
-  </div>
+      <div class="project">
+        <h4>Trap Synth Sample</h4>
+        <p>Noise reduction, EQ, compression, and normalization.</p>
+        <audio controls src="assets/audio/DAW/trap_funk_synths.wav"></audio>
+      </div>
 
-  <div class="project">
-  <h3>Trap track sample</h3>
-    <p>Noise reduction, EQ, compression, and normalization.</p>
-    <audio controls src="assets/audio/DAW/chill_wave.mp3"></audio>
-  </div>
+      <div class="project">
+        <h4>Trap Track Sample</h4>
+        <p>Noise reduction, EQ, compression, and normalization.</p>
+        <audio controls src="assets/audio/DAW/chill_wave.mp3"></audio>
+      </div>
 
-  <div class="project">
-  <h3>Guitar synth sample</h3>
-    <p>Noise reduction, EQ, compression, and normalization.</p>
-    <audio controls src="assets/audio/DAW/.mp3"></audio>
+      <div class="project">
+        <h4>Trap Wavy Sample</h4>
+        <p>Noise reduction, EQ, compression, and normalization.</p>
+        <audio controls src="assets/audio/DAW/trap_wavy.mp3"></audio>
+      </div>
+    </div>
+  </section>
 
-  <div class="project">
-    <h3>Short-Form Video Edit</h3>
-    <p></p>
-    <video controls width="400">
-      <iframe src="https://drive.google.com/file/d/1vqEcCkA3nEkmw6b8hA1KBVZTeDtDx7MV/preview" width="640" height="480" allow="autoplay" frameborder="0"></iframe>
-    </video>
-  </div>
+  <section id="Video">
+    <h3>Video Edits</h3>
+    <div class="video-grid">
+      <div class="project">
+        <h4>Short-Form Video Edit</h4>
+        <p>Jump cuts, captions, and background music.</p>
+        <iframe src="https://drive.google.com/file/d/1vqEcCkA3nEkmw6b8hA1KBVZTeDtDx7MV/preview" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+      </div>
 
-  <div class="project">
-    <h3>Short-Form Video Edit</h3>
-    <p>Jump cuts, captions, and background music.</p>
-    <video controls width="400">
-      <source src="assets/video/Short/sFp" type="video/mp4">
-    </video>
-  </div>
+      <div class="project">
+        <h4>Short-Form Video Edit</h4>
+        <p>Jump cuts, captions, and background music.</p>
+        <video controls>
+          <source src="assets/videos/Short/sFp.mp4" type="video/mp4">
+        </video>
+      </div>
 
-  <div class="project">
-    <h3>Long-Form Video Edits</h3>
-    <p>Jump cuts, captions, and background music.</p>
-    <video controls width="400">
-      <iframe src="https://drive.google.com/file/d/1SuzBUMW93JqGg1-R36PcGN8ZkM_d-Lpw/preview" width="640" height="480" allow="autoplay" frameborder="0"></iframe>
-    </video>
-  </div>
-
+      <div class="project">
+        <h4>Long-Form Video Edit</h4>
+        <p>Jump cuts, captions, and background music.</p>
+        <iframe src="https://drive.google.com/file/d/1SuzBUMW93JqGg1-R36PcGN8ZkM_d-Lpw/preview" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
 </section>
 
 <section id="tools">
@@ -109,10 +138,6 @@
   <p><strong>Intermediate:</strong> Ardour, LMMS</p>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: ojeffrey719@gmail.com</p>
-</section>
 
 <footer>
   <p>~JdoesTech~</p>

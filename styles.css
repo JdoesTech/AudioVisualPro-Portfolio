@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   line-height: 1.6;
+  color: #222;
 }
 
 header {
@@ -12,17 +13,80 @@ header {
 }
 
 section {
+  background: gainsboro;
   padding: 2rem;
   max-width: 800px;
-  margin: auto;
+  margin: 2rem auto;
+  border: 2px solid royalblue;
+  border-radius: 20px;
+}
+
+h2, h3, h4 {
+  margin-top: 0;
+  color: #111;
+}
+
+.list_grid{
+  display: grid;
+  grid-template-columns:  repeat(auto-fit,minmax(300px, 1fr));
+  gap: 1rem;
 }
 
 .project {
-  margin-bottom: 2rem;
-  max-width: 350px;
+  margin-bottom: 1rem;
 }
 
-audio, video {
+.cleanAudio,
+.beats,
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+audio {
+  min-width: 280px;          
+  width: 100%;
+  max-width: 100%;           
+}
+video {
   margin-top: 10px;
   width: 100%;
+  height: auto;
+  border: 1px solid #0099cc;
+  border-radius: 8px;
+  padding: 8px;
+  background: #fff;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: 10px;
+  border: 1px solid #0099cc;
+  border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+  section {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  header {
+    padding: 1.5rem;
+  }
+  
+  .list_grid,
+  .cleanAudio,
+  .beats,
+  .video-grid {
+    grid-template-columns: 1fr; 
+  }
+  
+  audio,
+  video,
+  iframe {
+    padding: 5px;
+  }
 }
